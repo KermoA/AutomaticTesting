@@ -27,7 +27,7 @@ namespace SeleniumTests
             driver!.Navigate().GoToUrl("http://kermoanijarv23.thkit.ee");
 
             // Find the toggle button
-             var button = driver.FindElement(By.CssSelector(".dracula-toggle-icon"));
+            var button = driver.FindElement(By.CssSelector(".dracula-toggle-icon"));
 
             // Find the <html> element to check for the data-dracula-scheme attribute
             var htmlElement = driver.FindElement(By.TagName("html"));
