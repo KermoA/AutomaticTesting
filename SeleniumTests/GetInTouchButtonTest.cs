@@ -26,17 +26,17 @@ namespace SeleniumTests
             // Navigate to the website
             driver!.Navigate().GoToUrl("http://kermoanijarv23.thkit.ee");
 
-            // Find the Get in Touch button using its name or xPath attribute
+            // Find the Get in Touch button using its Id
             var button = driver.FindElement(By.Id("get-in-touch"));
 
             // Wait after finding button
-            Thread.Sleep(2000);  // Replace with explicit wait if needed
+            Thread.Sleep(2000);
 
             // Click the Get in Touch button
             button.Click();
 
             // Wait for the contact page to load
-            Thread.Sleep(2000);  // Replace with explicit wait if needed
+            Thread.Sleep(2000);
 
             // Verify that the current URL is the expected one
             Assert.That(driver.Url, Is.EqualTo("https://kermoanijarv23.thkit.ee/contact/"), 
